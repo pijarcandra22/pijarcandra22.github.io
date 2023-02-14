@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--Font Awesome-->
+	<script src="https://kit.fontawesome.com/5eff079939.js" crossorigin="anonymous"></script>
+	<style>
+		body{
+		background-image:url(https://i.pinimg.com/originals/7e/5b/02/7e5b0225da2976fc6242266b90ec0716.gif);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:center ;
+		font-family : arial;
+		height:100vh;
+	}
+	span{
+		margin:0;
+		padding : 0;
+	}
+	div{
+		position : absolute;
+		top : 50%;
+		left : 50%;
+		transform:translate(-50%,-50%);
+		color : #fff;
+		text-transform: uppercase;
+		letter-spacing : 1rem;
+		font-size : 2rem;
+		border-left : 3px solid white;
+		border-right : 3px solid white;
+	
+		padding : 1rem;
+		padding-right : 0rem;
+		font-weight : 600;
+		
+		overflow : hidden;
+		white-space: nowrap;
+		width : 21rem;
+		animation : largeur 7s infinite;
+		background-color: #ffffff11;
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.699);
+	}
+	.small{
+		position : absolute;
+		right : 45%;
+		width: 0;
+		overflow : hidden;
+		animation : showSmall 7s infinite;
+	}
+	.u{
+		right: 5%;
+	}
+	.big{
+		animation : showBig 7s infinite;
+	}
+	.fa{
+		color:red;
+	}
+	.onlyi{
+		animation : hiddenLast 7s infinite;
+	}
+	.widya{
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		animation : displaylast 7s infinite;
+	}
+	@keyframes displaylast{
+		0%{
+			display: none;
+			opacity : 0;
+		}
+		79%{
+			display: inline;
+		}
+		80%{
+			opacity : 0;
+		}
+		97%{
+			opacity : 1;
+		}
+		98%{
+			display: none;
+		}
+		100%{
+			opacity : 0;
+		}
+	}
+	@keyframes hiddenLast{
+		0%{
+			width : 0;
+			opacity: 1;
+		}
+		80%{
+			width : 2rem;
+			opacity : 1;
+		}
+		97%{
+			width : 0rem;
+			opacity : 0;
+		}
+		100%{
+			width : 0rem;
+			opacity : 1;
+		}
+	}
+	@keyframes showSmall{
+		0%{
+			width : 0;
+		}		
+		20%{
+			width : 0rem;
+			opacity : 1;
+		}
+		22%{
+			width : 2rem;
+			opacity : 1;
+		}
+		70%{
+			width : 2rem;
+			opacity : 1;
+		}
+		80%{
+			width : 2rem;
+			opacity : 1;
+		}
+		97%{
+			width : 0rem;
+			opacity : 0;
+		}
+	}
+	@keyframes showBig{
+		0%{
+		}
+		19%{
+			opacity : 1;
+		}
+		25%{
+			opacity : 0;
+			width : 0;
+		}
+		80%{
+			opacity : 0;
+			width : 0;
+		}
+		97%{
+			opacity : 0;
+			width : 0;
+		}
+		100%{
+			opacity : 1;
+			width : 100%;
+		}
+	}
+	@keyframes largeur{
+		0%{
+			width: 21rem;
+			letter-spacing : 1rem;
+		}
+		50%{
+			letter-spacing : 0rem;
+		}
+		90%{
+			width: 6.5rem;
+			letter-spacing : 0rem;
+		}
+		100%{
+			width: 21rem;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<span class="widya">WIDYA</span>
+		<span class="onlyi">I</span>
+		<span class="big">Love</span>
+		<span class="small fa fa-heart"></span>
+		<span class="big">You</span>
+		<span class="small u">U</span>
+	</div>
+</body>
+</html>
